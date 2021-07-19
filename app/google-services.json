@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "245297624441",
+    "project_id": "neonadeuri-a577d",
+    "storage_bucket": "neonadeuri-a577d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245297624441:android:afbd665b5d311621b46ba8",
+        "android_client_info": {
+          "package_name": "com.inik.neonadeuri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245297624441-mpqcv10cmgsm52b12ig8jhmfv8k7u3nf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inik.neonadeuri",
+            "certificate_hash": "9287f627e08356516f41695f2ca4d434dbbc83de"
+          }
+        },
+        {
+          "client_id": "245297624441-970l7580fjld8id2mrkimmsu3d85kiv5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC8fsJq0s6c-NlHvqCAjUmS69012LiT_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245297624441-970l7580fjld8id2mrkimmsu3d85kiv5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

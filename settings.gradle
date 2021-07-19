@@ -1,0 +1,3 @@
+include ':cam'
+include ':app'
+rootProject.name = "Neonadeuri"

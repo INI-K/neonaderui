@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/top_panel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_circle_image_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0"
+                app:civ_border_color="@color/main_color"
+                app:civ_border_width="0.5dp" />
+
+            <TextView
+                android:id="@+id/profile_user_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profile_circle_image_view"
+                android:layout_weight="0"
+                android:text="Display Name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/more_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/view_panel"
+                android:layout_weight="0"
+                android:background="@color/white"
+                android:src="@drawable/button_more_option"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/feed_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_panel" />
+
+        <RelativeLayout
+            android:id="@+id/middle_panel"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/feed_image_view">
+
+            <ImageButton
+                android:id="@+id/liked_image_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:src="@drawable/icon_heart" />
+
+            <ImageButton
+                android:id="@+id/comment_image_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/liked_image_button"
+                android:background="@color/white"
+                android:src="@drawable/icon_commnet" />
+
+            <ImageButton
+                android:id="@+id/send_image_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/comment_image_button"
+                android:background="@color/white"
+                android:src="@drawable/icon_send" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/middle_panel"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/feed_like_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 명이 좋아함"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/feed_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feed_like_text_view"
+                android:text="Feed Text Example"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/feed_tag_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feed_text_view"
+                android:text="#TagExample1 #TagExample2"
+                android:textColor="@color/main_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/feed_time_posted_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feed_tag_text_view"
+                android:layout_marginTop="10dp"
+                android:text="0 일 전"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/show_comment_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feed_time_posted_text_view"
+                android:layout_marginTop="10dp"
+                android:text="0 개의 댓글 보기"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

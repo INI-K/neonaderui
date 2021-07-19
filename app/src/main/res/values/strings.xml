@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Neonadeuri</string>
+
+    <!-- Kakao Login -->
+    <string name="kakao_app_key">65ed98d141fcd92c37f25706cfae7ca8</string>
+
+    <string-array name="get_image_method">
+        <item>"앨범에서 선택"</item>
+        <item>"카메라로 촬영"</item>
+    </string-array>
+    <string name="title_activity_webview">Webview</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_profile_etc">ProfileEtcActivity</string>
+    <string name="title_activity_chat_list">ChatListActivity</string>
+
+    <string name="host">218.39.138.57</string>
+    <string name="port">3200</string>
+    <string name="action_settings">Options</string>
+
+
+    <string-array name = "LAN">
+        <item>"채팅"</item>
+        <item>"영상통화"</item>
+    </string-array>
+
+
+    <string name="wait">Wait...</string>
+    <string name="skipAlert">Skip</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- filters -->
+    <string name="filter_original">Original</string>
+    <string name="filter_black_white_default">Black White Default</string>
+    <string name="filter_black_white_bright">Black White Bright</string>
+    <string name="filter_black_white_dark">Black White Dark</string>
+    <string name="filter_blue_orange">Blue Orange</string>
+    <string name="filter_edge_detection">Edge Detection</string>
+    <string name="filter_pixelize">Pixelize</string>
+    <string name="filter_em_interference">EM Interference</string>
+    <string name="filter_triangles_mosaic">Triangles Mosaic</string>
+    <string name="filter_legofied">Legofied</string>
+    <string name="filter_tile_mosaic">Tile Mosaic</string>
+    <string name="filter_chromatic_aberration">Chromatic Aberration</string>
+    <string name="filter_basic_deform">Basic Deform</string>
+    <string name="filter_contrast">Contrast</string>
+    <string name="filter_noise_warp">Noise Warp</string>
+    <string name="filter_refraction">Refraction</string>
+    <string name="filter_mapping">Mapping</string>
+    <string name="filter_crosshatch">Crosshatch</string>
+    <string name="filter_lichtenstein_esque">Lichtenstein Esque</string>
+    <string name="filter_ascii_art">Ascii Art</string>
+    <string name="filter_money_filter">Money Filter</string>
+    <string name="filter_cracked">Cracked</string>
+    <string name="filter_polygonization">Polygonization</string>
+    <string name="filter_jfa_voronoi">JFA Voronoi</string>
+</resources>

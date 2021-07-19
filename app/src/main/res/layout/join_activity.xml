@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/Join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="회원가입"
+            android:textColor="@color/black"
+            android:textSize="25dp"/>
+
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="30dp"
+            android:layout_height="2dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp">
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:hint="아이디 (이메일주소)"
+                />
+            <Button
+                android:id="@+id/checkEmail"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_basic"
+                android:textColor="@color/white"
+                android:text="중복확인">
+            </Button>
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:hint="비밀번호"
+            />
+        <EditText
+            android:id="@+id/rePasswordInput"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:hint="비밀번호확인"
+            />
+        <LinearLayout
+
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/phoneNumEditText"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:hint="휴대전화번호('-'제외)"/>
+
+
+            <Button
+                android:id="@+id/otpBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_basic"
+                android:textColor="@color/white"
+                android:text="인증번호 전송"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+            <EditText
+                android:id="@+id/verifyText"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:hint="인증번호 입력"
+                android:visibility="gone">
+            </EditText>
+            <Button
+                android:id="@+id/verifyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인증번호 확인"
+                android:textSize="12dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <CheckBox
+
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textStyle="bold"
+                android:text="이용약관 동의 (필수)"
+                android:id="@+id/Ucheck"/>
+            <TextView
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text=">   "
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textStyle="bold"
+                android:text="개인정보취급 방침동의 (필수)"
+                android:id="@+id/Icheck"/>
+            <TextView
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text=">   "
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textStyle="bold"
+                android:text="마캐팅 정보 수신 동의 (선택)"
+                android:id="@+id/Mcheck"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text=">   "
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textStyle="bold"
+            android:text="전체동의"
+            android:id="@+id/Acheck"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/button_basic"
+            android:textColor="@color/white"
+            android:text="회원가입"
+            android:textStyle="bold"
+            android:id="@+id/btn_register"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
