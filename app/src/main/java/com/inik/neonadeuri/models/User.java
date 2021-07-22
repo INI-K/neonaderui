@@ -199,7 +199,7 @@ public class User implements Serializable {
                 phone = "010 1111 1111";
                 profileImg = new Photo();
                 webSite = "www.INIK.com";
-                introduction = "연애 마렵다.";
+                introduction = "연애 하고싶다.";
                 followers = new ArrayList<>();
                 following = new ArrayList<>();
                 feeds = new ArrayList<>();
@@ -223,11 +223,11 @@ public class User implements Serializable {
                 email = "test0004@email.com";
                 password = "근형쿤";
                 name = "근형쿤";
-                nickname = "MOssolADA (근형쿤)";
+                nickname = "MOssol (근형쿤)";
                 phone = "010 3333 3333";
                 profileImg = new Photo();
-                webSite = "www.MOssolADA.com";
-                introduction = "하림씨... 그립읍니다...";
+                webSite = "www.mosol.com";
+                introduction = "근형쿤 테스트";
                 followers = new ArrayList<>();
                 following = new ArrayList<>();
                 feeds = new ArrayList<>();
